@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.interview.shoppingcart.CreateAccountTest"/>
+      <class name="com.interview.shoppingcart.tests.CreateAccountTest"/>
     </classes>
   </test> <!-- Default test -->
   <test name="Default test(failed)">
     <classes>
-      <class name="com.interview.shoppingcart.CreateAccountTest">
+      <class name="com.interview.shoppingcart.tests.CreateAccountTest">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="createAccount"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- com.interview.shoppingcart.CreateAccountTest -->
+      </class> <!-- com.interview.shoppingcart.tests.CreateAccountTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
