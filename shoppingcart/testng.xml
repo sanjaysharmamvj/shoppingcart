@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="ShoopingCartTestSuite" parallel="none">
 	<listeners>
-		<listener class-name="com.interview.shoppingcart.test.listeners.ListenerTest" />
+		<listener class-name="com.interview.shoppingcart.test.listeners.CustomListener" />
 	</listeners>
 	<test name="CreateAccountTest">
 		<parameter name="browser" value="LOCAL_CHROME">
