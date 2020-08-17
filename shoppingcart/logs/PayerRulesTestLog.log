@@ -1,0 +1,15 @@
+[INFO ] 2020-08-11 22:17:27.477 [main] HomePage - Clicked on Sigin button
+[INFO ] 2020-08-11 22:17:27.886 [main] AuthenticationPage - Email Id entered successfully
+[INFO ] 2020-08-11 22:17:28.022 [main] AuthenticationPage - Register button clicked
+[INFO ] 2020-08-11 22:17:49.119 [main] CreateAnAccountPage - Register button clicked
+[INFO ] 2020-08-11 22:19:53.276 [main] HomePage - Clicked on Sigin button
+[INFO ] 2020-08-11 22:19:55.900 [main] AuthenticationPage - Email Id entered successfully
+[INFO ] 2020-08-11 22:19:56.057 [main] AuthenticationPage - Register button clicked
+[INFO ] 2020-08-11 22:20:04.540 [main] CreateAnAccountPage - Register button clicked
+[INFO ] 2020-08-11 23:40:01.200 [main] HomePage - Clicked on Sigin button
+[INFO ] 2020-08-11 23:40:01.552 [main] AuthenticationPage - Email Id entered successfully
+[INFO ] 2020-08-11 23:40:01.663 [main] AuthenticationPage - Create an Account button clicked
+[INFO ] 2020-08-11 23:42:59.875 [main] HomePage - Clicked on Sigin button
+[INFO ] 2020-08-11 23:43:00.764 [main] AuthenticationPage - Email Id entered successfully
+[INFO ] 2020-08-11 23:43:00.882 [main] AuthenticationPage - Create an Account button clicked
+[INFO ] 2020-08-11 23:43:19.831 [main] CreateAnAccountPage - Register button clicked

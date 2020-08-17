@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ShoopingCartTestSuite" parallel="none">
+	<listeners>
+		<listener class-name="com.interview.shoppingcart.test.listeners.ListenerTest" />
+	</listeners>
+	<test name="CreateAccountTest">
+		<parameter name="browser" value="LOCAL_CHROME">
+			<parameter name="gridHubURL"
+				value="http://10.0.0.6:4444/wd/hub" />
+		</parameter>
+		<classes>
+			<class
+				name="com.interview.shoppingcart.tests.CreateAccountTest" />
+		</classes>
+	</test> <!-- 
+	<test name="CreateAccountTestSecondTime">
+		<parameter name="browser" value="LOCAL_FIREFOX" />
+		<parameter name="gridHubURL"
+			value="http://10.0.0.6:4444/wd/hub" />
+		<classes>
+			<class
+				name="com.interview.shoppingcart.tests.CreateAccountTest" />
+		</classes>
+	</test>  -->
+</suite> <!-- Suite -->
