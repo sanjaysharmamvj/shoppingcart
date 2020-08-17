@@ -1,52 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20738" started-at="2020-08-10T12:28:30Z" finished-at="2020-08-10T12:28:50Z">
+  <suite name="Default suite" duration-ms="1934" started-at="2020-08-16T20:51:21 IST" finished-at="2020-08-16T20:51:23 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20738" started-at="2020-08-10T12:28:30Z" finished-at="2020-08-10T12:28:50Z">
+    <test name="Default test" duration-ms="1934" started-at="2020-08-16T20:51:21 IST" finished-at="2020-08-16T20:51:23 IST">
       <class name="com.interview.shoppingcart.tests.CreateAccountTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.interview.shoppingcart.tests.CreateAccountTest@2aaf7cc2]" name="beforeTest" is-config="true" duration-ms="20673" started-at="2020-08-10T17:58:30Z" finished-at="2020-08-10T17:58:50Z">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:com.interview.shoppingcart.tests.CreateAccountTest@4116aac9]" name="beforeTest" is-config="true" duration-ms="-1597591281485" started-at="2020-08-16T20:51:21 IST" finished-at="1970-01-01T05:30:00 IST">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\ss041118\AppData\Local\Temp\testng-eclipse-1669264534\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\ss041118\AppData\Local\Temp\testng-eclipse-1669264534\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="SKIP" signature="createAccount(java.util.Map)[pri:0, instance:com.interview.shoppingcart.tests.CreateAccountTest@2aaf7cc2]" name="createAccount" duration-ms="0" started-at="2020-08-10T17:58:50Z" data-provider="userRegistrationdata" finished-at="2020-08-10T17:58:50Z">
-          <exception class="java.lang.RuntimeException">
+        <test-method status="SKIP" signature="createAccount(java.util.Map)[pri:0, instance:com.interview.shoppingcart.tests.CreateAccountTest@4116aac9]" name="createAccount" duration-ms="0" started-at="2020-08-16T20:51:23 IST" data-provider="userRegistrationdata" finished-at="2020-08-16T20:51:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Sanjay, lastName=Sharma, password=Welcome123, fName=Sanjay, lName=Sharma, address=Cerner,12 LakeTown,Block-B, city=Philadelphia, state=Pennslyvania, zipcode=15001, country=United States, mobileNo=90515567, aliasAddress=Residency}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Can't invoke method public java.lang.Object[][] com.interview.shoppingcart.dataproviders.UserDataProvider.getRegistrationData() throws java.io.FileNotFoundException on this instance of class com.interview.shoppingcart.tests.CreateAccountTest due to class mismatch]]>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\ss041118\AppData\Local\Temp\testng-eclipse-1669264534\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: Can't invoke method public java.lang.Object[][] com.interview.shoppingcart.dataproviders.UserDataProvider.getRegistrationData() throws java.io.FileNotFoundException on this instance of class com.interview.shoppingcart.tests.CreateAccountTest due to class mismatch
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:75)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1276)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:991)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1081)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in C:\Users\ss041118\AppData\Local\Temp\testng-eclipse-1669264534\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.interview.shoppingcart.tests.CreateAccountTest@2aaf7cc2]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-08-10T17:58:50Z" finished-at="2020-08-10T17:58:50Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.interview.shoppingcart.tests.CreateAccountTest@4116aac9]" name="afterTest" is-config="true" duration-ms="-1597591283397" started-at="2020-08-16T20:51:23 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
