@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -11,10 +13,13 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenerTest implements ITestListener {
+import com.interview.shoppingcart.dataproviders.UserDataProvider;
+
+public class CustomListener implements ITestListener {
+	static final Logger logger=LogManager.getLogger(CustomListener.class);
 
 	WebDriver driver = null;
-	String filePath = "C:\\Screenshots";
+	String filePath = "C:/Screenshots";
 
 	public void onFinish(ITestContext result) {
 
@@ -34,6 +39,7 @@ public class ListenerTest implements ITestListener {
 		String methodName = result.getName().toString().trim();
 		ITestContext context = result.getTestContext();
 		WebDriver driver = (WebDriver) context.getAttribute("driver");
+		logger.info("Driver from test context: "+driver);
 		takeScreenShot(methodName, driver);
 	}
 
@@ -41,7 +47,7 @@ public class ListenerTest implements ITestListener {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// The below method will save the screen shot in d drive with test method name
 		try {
-			FileUtils.copyFile(scrFile, new File(filePath + methodName + ".png"));
+			FileUtils.copyFile(scrFile, new File(filePath + File.separator+ methodName + ".png"));
 			System.out.println("***Placed screen shot in " + filePath + " ***");
 		} catch (IOException e) {
 			e.printStackTrace();
